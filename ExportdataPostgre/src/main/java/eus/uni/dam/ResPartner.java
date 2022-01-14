@@ -1,13 +1,14 @@
 package eus.uni.dam;
 
 import java.io.Serializable;
+import javax.persistence.*;
 import java.util.List;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
+
+/**
+ * The persistent class for the res_partner database table.
+ * 
+ */
 @Entity
 @Table(name="res_partner")
 @NamedQuery(name="ResPartner.findAll", query="SELECT r FROM ResPartner r")
@@ -16,15 +17,20 @@ public class ResPartner implements Serializable {
 
 	@Id
 	private Integer id;
+	
 	private String name;
 
 	
-
 	//bi-directional many-to-one association to PartidakPartidak
-	@OneToMany(mappedBy="resPartner")
-	private List<PartidakPartidak> partidakPartidaks;
+//	@OneToMany(mappedBy="resPartner")
+	//private List<PartidakPartidak> partidakPartidaks;
 
 	public ResPartner() {
+	}	
+	
+	public ResPartner(Integer id,String name) {
+		this.id=id;
+		this.name=name;
 	}
 
 	public Integer getId() {
@@ -35,7 +41,6 @@ public class ResPartner implements Serializable {
 		this.id = id;
 	}
 
-	
 	public String getName() {
 		return this.name;
 	}
@@ -44,29 +49,10 @@ public class ResPartner implements Serializable {
 		this.name = name;
 	}
 
-
-
-
-	public List<PartidakPartidak> getPartidakPartidaks() {
-		return this.partidakPartidaks;
-	}
-
-	public void setPartidakPartidaks(List<PartidakPartidak> partidakPartidaks) {
-		this.partidakPartidaks = partidakPartidaks;
-	}
-
-	public PartidakPartidak addPartidakPartidak(PartidakPartidak partidakPartidak) {
-		getPartidakPartidaks().add(partidakPartidak);
-		partidakPartidak.setResPartner(this);
-
-		return partidakPartidak;
-	}
-
-	public PartidakPartidak removePartidakPartidak(PartidakPartidak partidakPartidak) {
-		getPartidakPartidaks().remove(partidakPartidak);
-		partidakPartidak.setResPartner(null);
-
-		return partidakPartidak;
+	
+	@Override
+	public String toString() {
+		return "ResPartner [id=" + id + ", name=" + name +"]";
 	}
 
 }
