@@ -1,0 +1,8 @@
+db.puntuazioa.insertMany([
+{ partidaId:3,puntuazioa:140, data: Date('2022-01-8T23:00:00.000+00:00'), employeeId:3},
+{partidaId:4,puntuazioa:150, data: Date('2022-01-9T23:00:00.000+00:00'), employeeId:4}
+])
+
+db.puntuazioa.find({
+    "dt" : {"$gte": ISODate("2022-01-01T00:00:00.000Z")}
+})
