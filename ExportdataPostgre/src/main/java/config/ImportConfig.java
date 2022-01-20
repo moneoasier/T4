@@ -4,10 +4,13 @@ import static com.mongodb.MongoClientSettings.getDefaultCodecRegistry;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -71,8 +74,41 @@ public class ImportConfig {
 	static ManagementDAO dout = exportContext.getBean(ManagementDAO.class);
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		
+		
+		
+		
+		while(true) {
 
+		System.out.println("Service started, waiting for connection");
+        //Create ServerSocket object, bind port, start waiting for connection
+        ServerSocket ss = new ServerSocket(8888);
+        //accept method, return socket object
+        Socket server = ss.accept();
+        //Get input object, read file
+        BufferedInputStream bis = new BufferedInputStream(server.getInputStream());
+        //Save to local
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("C:\\prueba.json"));
+
+        //Create byte array
+        byte[] b = new byte[1024 * 8];
+        //Read character array
+        int len;
+        while ((len = bis.read(b)) != -1) {
+            bos.write(b, 0, len);
+        }
+	
+        //close resource
+        
+        bos.close();
+        bis.close();
+        server.close();
+        ss.close();
+        
+        
+        System.out.println("Upload succeeded");
+	
 		employees = dout.getEmployees();
 		partidak=dout.getPartidak();
 		
@@ -85,7 +121,7 @@ public class ImportConfig {
 		try {
 		
 	            
-			JSONArray a = (JSONArray) parser.parse(new FileReader("c:\\prueba.json"));
+			JSONArray a = (JSONArray) parser.parse(new FileReader("C:\\prueba.json"));
 			
 			int i=partidak.size();
 			int g = partidak.size();
@@ -144,15 +180,15 @@ public class ImportConfig {
 	            }
 	            
 	            System.out.println("updated succesfully!!");
-
+	            partidamongo.clear();
 
 	            
+	        
+	        
 	        }
 	        
 	        
-	        
-	        
-	        
+	}
 	       
 		
 		
