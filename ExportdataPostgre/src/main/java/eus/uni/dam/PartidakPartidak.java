@@ -2,9 +2,7 @@ package eus.uni.dam;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.util.Date;
-import java.sql.Timestamp;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 
 /**
@@ -20,8 +18,14 @@ public class PartidakPartidak implements Serializable {
 	@Id
 	private Integer id;
 
+	private Integer adina;
+
+
+
 	
-	private LocalDate data;
+	private LocalDateTime data;
+
+	private String departamentua;
 
 	private Integer employeeid;
 
@@ -35,15 +39,20 @@ public class PartidakPartidak implements Serializable {
 	}
 	
 	
- 	public PartidakPartidak(Integer partidaId,Integer id,Integer puntuazioa,Integer employeeid,LocalDate data ) {
-	this.partidaId=partidaId;
-	this.id=id;
-	this.puntuazioa=puntuazioa;
-	this.employeeid=employeeid;
-	this.data=data;
-	
-	
-}
+
+	public PartidakPartidak(Integer id, Integer adina, LocalDateTime data, String departamentua, Integer employeeid,
+			Integer partidaId, Integer puntuazioa) {
+		super();
+		this.id = id;
+		this.adina = adina;
+		this.data = data;
+		this.departamentua = departamentua;
+		this.employeeid = employeeid;
+		this.partidaId = partidaId;
+		this.puntuazioa = puntuazioa;
+	}
+
+
 
 	public Integer getId() {
 		return this.id;
@@ -53,14 +62,30 @@ public class PartidakPartidak implements Serializable {
 		this.id = id;
 	}
 
+	public Integer getAdina() {
+		return this.adina;
+	}
+
+	public void setAdina(Integer adina) {
+		this.adina = adina;
+	}
+
 	
 
-	public LocalDate getData() {
+	public LocalDateTime getData() {
 		return this.data;
 	}
 
-	public void setData(LocalDate data) {
+	public void setData(LocalDateTime data) {
 		this.data = data;
+	}
+
+	public String getDepartamentua() {
+		return this.departamentua;
+	}
+
+	public void setDepartamentua(String departamentua) {
+		this.departamentua = departamentua;
 	}
 
 	public Integer getEmployeeid() {
@@ -88,11 +113,13 @@ public class PartidakPartidak implements Serializable {
 	}
 
 
+
 	@Override
 	public String toString() {
-		return "PartidakPartidak [id=" + id + ", data=" + data + ", employeeid=" + employeeid + ", partidaId="
-				+ partidaId + ", puntuazioa=" + puntuazioa + "]";
+		return "PartidakPartidak [id=" + id + ", adina=" + adina + ", departamentua=" + departamentua + ", employeeid="
+				+ employeeid + ", partidaId=" + partidaId + ", puntuazioa=" + puntuazioa + "]";
 	}
+
 
 	
 }

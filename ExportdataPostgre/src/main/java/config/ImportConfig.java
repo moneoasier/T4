@@ -4,19 +4,27 @@ import static com.mongodb.MongoClientSettings.getDefaultCodecRegistry;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecProvider;
@@ -49,6 +57,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.InsertOneResult;
 
+import eus.uni.dam.HrEmployee;
 import eus.uni.dam.ManagementDAO;
 import eus.uni.dam.PartidakPartidak;
 import eus.uni.dam.ResPartner;
@@ -56,26 +65,26 @@ import eus.uni.dam.ResPartner;
 
 public class ImportConfig {
 	static List<PartidakPartidak> partidak = new ArrayList<>();
-	static List<ResPartner> employees = new ArrayList<>();
-
+	static List<HrEmployee> employees = new ArrayList<>();
+	static List<PartidakPartidak>partidamongo= new ArrayList<>();
 	static ApplicationContext exportContext = new AnnotationConfigApplicationContext(Postgreconfig.class);
 	static ManagementDAO dout = exportContext.getBean(ManagementDAO.class);
-	  private static final SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	
 	
 	public static void main(String[] args) {
 
 		employees = dout.getEmployees();
 		partidak=dout.getPartidak();
 		
-		
-		
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+	
 
-
-		LocalDate date = LocalDate.now();
+		LocalDateTime date = LocalDateTime.now();
 		JSONParser parser = new JSONParser();
-		Timestamp timestamp = Timestamp.valueOf(date.atStartOfDay());
+	
 		try {
-
+		
+	            
 			JSONArray a = (JSONArray) parser.parse(new FileReader("c:\\prueba.json"));
 			
 			int i=partidak.size();
@@ -86,19 +95,21 @@ public class ImportConfig {
 				
 				JSONObject jsonObject = (JSONObject) o;
 				String puntuazioa = String.valueOf(jsonObject.get("puntuazioa"));
-				date = LocalDate..parse((String) jsonObject.get("data"), sdf3.format(timestamp));
+				String adina = String.valueOf(jsonObject.get("adina"));
+				String departamentua = String.valueOf(jsonObject.get("departamentua"));
+				date = LocalDateTime.parse((String) jsonObject.get("data"),formatter);
 				String employeeid = (String) String.valueOf(jsonObject.get("employeeid"));
 				
 
-				PartidakPartidak p = new PartidakPartidak(++i,++g, Integer.parseInt(puntuazioa),
-						Integer.parseInt(employeeid), date);
-
+				PartidakPartidak p = new PartidakPartidak(++i,Integer.parseInt(adina),date,departamentua,Integer.parseInt(employeeid),++g,Integer.parseInt(puntuazioa));
 				System.out.println(p);
+				partidamongo.add(p);
 				dout.update(p);
 
-			
-			
 			}
+				
+				
+				
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -113,7 +124,7 @@ public class ImportConfig {
 		
 		  CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).build();
 	        CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
-	        // Replace the uri string with your MongoDB deployment's connection string
+	        
 	        String uri = "mongodb://192.168.65.4:27017/";
 	        
 	        
@@ -122,10 +133,10 @@ public class ImportConfig {
 	            MongoCollection<Document> collection = database.getCollection("puntuazioa");
 	     
 	      
-	            for(PartidakPartidak p:partidak) {
+	            for(PartidakPartidak p:partidamongo) {
 	            
 	            	
-	            	//collection.insertOne(new Document().append("_id", new ObjectId()).append("partidaId", p.getPartidaId()).append("puntuazioa", p.getPuntuazioa()).append("data", p.getData()).append("employeeid",p.getEmployeeid()));
+	            	collection.insertOne(new Document().append("_id", new ObjectId()).append("partidaId", p.getPartidaId()).append("puntuazioa", p.getPuntuazioa()).append("data", p.getData()).append("employeeid",p.getEmployeeid()).append("adina", p.getAdina()).append("departamentua", p.getDepartamentua()));
 	            	
 	            	
 	            	System.out.println(p);

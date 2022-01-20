@@ -47,17 +47,20 @@ public class ManagementDAO {
     
  
     @SuppressWarnings("unchecked")
-    public List<ResPartner> getEmployees() {
+    public List<HrEmployee> getEmployees() {
         return entityManager.createQuery("from ResPartner").getResultList();
     }
-    public ResPartner getEmpById(long id) {
-        return entityManager.find(ResPartner.class, id);
+    public HrEmployee getEmpById(long id) {
+        return entityManager.find(HrEmployee.class, id);
     }
-    public void create(ResPartner emp) {
+    public HrEmployee getEmpByDeparmentId(long departmentId) {
+        return entityManager.find(HrEmployee.class, departmentId);
+    }
+    public void create(HrEmployee emp) {
         entityManager.persist(emp);
         return;
     }
-    public void update(ResPartner emp) {
+    public void update(HrEmployee emp) {
     	entityManager.merge(emp);
     }
     
