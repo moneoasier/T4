@@ -9,7 +9,7 @@ private int puntuazioa;
 private Date data;
 private int employeeid;
 private int adina;
-private int departamentua;
+private String departamentua;
 
 
 
@@ -19,7 +19,7 @@ public Partida() {
 }
 
 
-public Partida(int partidaId, int puntuazioa, Date data, int employeeid, int adina, int departamentua) {
+public Partida(int partidaId, int puntuazioa, Date data, int employeeid, int adina, String departamentua) {
 	super();
 	this.partidaId = partidaId;
 	this.puntuazioa = puntuazioa;
@@ -101,14 +101,14 @@ public void setAdina(int adina) {
 
 
 
-public int getDepartamentua() {
+public String getDepartamentua() {
 	return departamentua;
 }
 
 
 
 
-public void setDepartamentua(int departamentua) {
+public void setDepartamentua(String departamentua) {
 	this.departamentua = departamentua;
 }
 

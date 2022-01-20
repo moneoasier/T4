@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mongodb.BasicDBObject;
 
+import eus.uni.dam.Greeting;
 import eus.uni.dam.dao.PartidaDAO;
 
 import eus.uni.dam.model.Partida;
@@ -30,8 +31,6 @@ public class EskatzaileaController {
 		List<Partida> partidaDatak;
 		List<Partida> top3= new ArrayList<Partida>();
 		
-		String data= getUrtea() + "/" + getHilabetea();
-
 	   @Autowired
 	   private PartidaDAO partidaDao;
 
@@ -76,33 +75,13 @@ public class EskatzaileaController {
 	        return partidaDao.findAll();
 	    }
 	   
-	   public String getUrtea()
-	   {
-		   Date dateY = new Date();
-
-	        SimpleDateFormat getYearFormat = new SimpleDateFormat("yyyy");
-	        String currentYear = getYearFormat.format(dateY);
-	        return currentYear;
-	        
-	   }
-	   public String getHilabetea()
-	   {
-		   Date dateM = new Date();
-
-	        SimpleDateFormat getMonthFormat = new SimpleDateFormat("mm");
-	        String currentMonth = getMonthFormat.format(dateM);
-	        return currentMonth;
-	        
-	   }
-	   
-	   
-	   @GetMapping("partidakDatak")
-	    public List<Partida> getPartidakDatak(@RequestParam(value="data", defaultValue="2022/01")String data) {
-		   
-		  
-	        return partidaDatak;
-	    }
-	   
+	   @GetMapping("/partidaLangile")
+		public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+			
+			return new Greeting(counter.incrementAndGet(), String.format(template, name));
+			
+		}
+	
 	   
 
 	   
