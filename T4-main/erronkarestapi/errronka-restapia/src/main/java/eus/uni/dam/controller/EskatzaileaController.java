@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mongodb.BasicDBObject;
 
-import eus.uni.dam.Greeting;
+
 import eus.uni.dam.dao.PartidaDAO;
 
 import eus.uni.dam.model.Partida;
@@ -74,7 +74,7 @@ public class EskatzaileaController {
 		   
 	        return partidaDao.findAll();
 	    }
-	   
+	   /*
 	   @GetMapping("/partidaLangile")
 		public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 			
@@ -84,6 +84,6 @@ public class EskatzaileaController {
 	
 	   
 
-	   
+	   */
 	   
 }
