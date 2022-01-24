@@ -35,8 +35,8 @@ public class EskatzaileaController {
 	   private PartidaDAO partidaDao;
 
 	
-	   @GetMapping("partidakOrdenatuak")
-	    public List<Partida> getPartidakOrdenatuak() {
+	   @GetMapping("partidakHallOfFame")
+	    public List<Partida> getPartidakFame() {
 		   partidaOrdenatuak=partidaDao.findAll();
 		   
 		   Collections.sort(partidaOrdenatuak, new Comparator<Partida>() {
@@ -55,12 +55,12 @@ public class EskatzaileaController {
 	   @GetMapping("partidakTop3")
 	   public List<Partida> getTop3(){
 		   
-		   if(getPartidakOrdenatuak().size()>3) {
+		   if(getPartidakFame().size()>3) {
 			   for(int i=0;i<3;i++) {
-				   top3.add(getPartidakOrdenatuak().get(i));
+				   top3.add(getPartidakFame().get(i));
 			   }
 		   }else {
-			   return getPartidakOrdenatuak();
+			   return getPartidakFame();
 		   }
 		return top3;
 		   
@@ -83,6 +83,21 @@ public class EskatzaileaController {
 			
 		}
 	
+	   @GetMapping("partidakHallOfShame")
+	    public List<Partida> getPartidakShame() {
+		   partidaOrdenatuak=partidaDao.findAll();
+		   
+		   Collections.sort(partidaOrdenatuak, new Comparator<Partida>() {
+				@SuppressWarnings("removal")
+				@Override
+				public int compare(Partida p1, Partida p2) {
+					
+					return new Integer(p1.getPuntuazioa()).compareTo(new Integer(p2.getPuntuazioa()));
+				}
+			});
+		   
+	        return partidaOrdenatuak;
+	    }
 	   
 
 	   
