@@ -11,12 +11,14 @@ import javax.management.Query;
 
 import eus.uni.dam.model.*;
 
+import org.bson.conversions.Bson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.Filters;
 
 @Repository
 public class PartidaDAO {
@@ -32,10 +34,10 @@ public class PartidaDAO {
     	return collection.find().into(new ArrayList<>());
     }
     
-    
-    public static List<Partida> findDate(){
-
-    	return null;
+    public List<Partida> findEmployee(int employee){
+    	 Bson filter=Filters.eq("employeeid",employee);
+    	
+    	return collection.find(filter).into(new ArrayList<>());
     }
     
 

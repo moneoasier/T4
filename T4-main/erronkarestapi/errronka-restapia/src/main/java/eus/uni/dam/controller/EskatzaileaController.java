@@ -74,16 +74,17 @@ public class EskatzaileaController {
 		   
 	        return partidaDao.findAll();
 	    }
-	   /*
-	   @GetMapping("/partidaLangile")
-		public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+	   
+	   @GetMapping("/partidaEmployee")
+		public List<Partida> partidaEmployee(@RequestParam(value = "employee", defaultValue = "1") int employee) {
 			
-			return new Greeting(counter.incrementAndGet(), String.format(template, name));
+			
+			return(partidaDao.findEmployee(employee));
 			
 		}
 	
 	   
 
-	   */
+	   
 	   
 }
