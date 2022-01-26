@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ErronkaOndo.Models.Partida>
+
+@{
+    ViewData["Title"] = "Default";
+}
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Partida Id
+            </th>
+            <th>
+                Puntuazioa
+            </th>
+            <th>
+                Data
+            </th>
+            <th>
+                Langile Id
+            </th>
+            <th>
+                Adina
+            </th>
+            <th>
+                Departamendua
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.partidaId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.puntuazioa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employeeid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.adina)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.departamentua)
+                </td>
+                <td>
+
+                    <a asp-action="Foroa"><button type="button" class="btn btn-outline-info">Komentatu</button></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

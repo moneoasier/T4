@@ -1,0 +1,93 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Hall of fame";
+}
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    <title>Band Name</title>
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="site.css">
+
+
+
+</head>
+
+<body class="header-collapse">
+
+    <div id="site-content">
+
+
+
+        <main class="main-content">
+            <div class="container izenburua">
+
+                <h2><b>Hall of fame</b></h2>
+
+
+
+            </div>
+            <div class="testua container">
+
+                <div class="fullwidth-block testimonial-section">
+                    <div class="container">
+                        <div class="quote-slider">
+
+                            @await Component.InvokeAsync("Partida")
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </main> <!-- .main-content -->
+        <br />
+        <footer class="site-footer">
+            <div class="container">
+                <img src="dummy/logo-footer.png" alt="Site Name">
+
+                <address>
+                    <p>50, Thiruvoodal Street, Thiruvannamalai. <br><a href="tel:9488487853">+91 94884 87853</a> <br> <a href="mailto:srikrishnacommunication55@gmail.com">srikrishnacommunication55@gmail.com</a></p>
+                </address>
+
+                <form action="#" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email to join newsletter...">
+                    <input type="submit" class="button cut-corner" value="Subscribe">
+                </form> <!-- .newsletter-form -->
+
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div> <!-- .social-links -->
+
+                <p class="copy">Band Name  Copyright 2016. All right reserved. Designed by <a href="http://srikrishnacommunication.com/Giridesigns.html">Giri Designs</a></p>
+            </div>
+        </footer> <!-- .site-footer -->
+
+    </div> <!-- #site-content -->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+
