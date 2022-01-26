@@ -35,7 +35,7 @@ public class EskatzaileaController {
 	   private PartidaDAO partidaDao;
 
 	
-	   @GetMapping("partidakHallOfFame")
+	   @GetMapping("partidakFame")
 	    public List<Partida> getPartidakFame() {
 		   partidaOrdenatuak=partidaDao.findAll();
 		   
@@ -83,7 +83,7 @@ public class EskatzaileaController {
 			
 		}
 	
-	   @GetMapping("partidakHallOfShame")
+	   @GetMapping("partidakShame")
 	    public List<Partida> getPartidakShame() {
 		   partidaOrdenatuak=partidaDao.findAll();
 		   
