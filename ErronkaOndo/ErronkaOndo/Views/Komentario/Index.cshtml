@@ -2,9 +2,9 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
-
+@model ErronkaOndo.Models.Komentario
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Foroa";
 }
 
 <html lang="en">
@@ -27,38 +27,58 @@
 <body class="header-collapse">
 
     <div id="site-content">
-
-
-
         <main class="main-content">
 
-            <div class="izenburua container">
-              
-                <h2><b>Jokoa</b></h2>
-                <p>bdfvfuvdfhjbf</p>
+            <div class="izenburua container  ">
 
-
-
-            </div>
-
-            <div class="testua">
-            
-            <p>fubbfshubfbfbbfbfkda</p>
-            
-            
-            
-            </div>
-
-
-
-
-
-
-
-
-        </main> <!-- .main-content -->
-
+                <h2><b>Foroa</b></h2>
         
+            </div>
+
+            <div class="row">
+                <div class="col-5 ">
+
+
+                    @await Component.InvokeAsync("Foroa")
+                </div>
+                <div class="col-2 ">
+                    </div>
+                <div class="col-5 ">
+                    <div class="testua">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6">
+                                <form asp-action="Index">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                    <div class="form-group">
+                                        <label asp-for="testua" class="control-label"></label>
+                                        <input asp-for="testua" class="form-control" />
+                                        <span asp-validation-for="testua" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="erabiltzailea" class="control-label"></label>
+                                        <input asp-for="erabiltzailea" class="form-control" />
+                                        <span asp-validation-for="erabiltzailea" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="partidaId" class="control-label"></label>
+                                        <input asp-for="partidaId" class="form-control" value="@ViewBag.partidaId" />
+                                        <span asp-validation-for="partidaId" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Create" class="btn btn-primary" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                  
+
+                </div>
+            </div>
+        </main> <!-- .main-content -->
 
     </div> <!-- #site-content -->
 

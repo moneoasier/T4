@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moneo.asier\\Desktop\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj": {}
+    "C:\\Users\\moneo.asier\\Documents\\GitHub\\T4\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moneo.asier\\Desktop\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj": {
+    "C:\\Users\\moneo.asier\\Documents\\GitHub\\T4\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moneo.asier\\Desktop\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj",
+        "projectUniqueName": "C:\\Users\\moneo.asier\\Documents\\GitHub\\T4\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj",
         "projectName": "ErronkaOndo",
-        "projectPath": "C:\\Users\\moneo.asier\\Desktop\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj",
+        "projectPath": "C:\\Users\\moneo.asier\\Documents\\GitHub\\T4\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj",
         "packagesPath": "C:\\Users\\moneo.asier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moneo.asier\\Desktop\\ErronkaOndo\\ErronkaOndo\\obj\\",
+        "outputPath": "C:\\Users\\moneo.asier\\Documents\\GitHub\\T4\\ErronkaOndo\\ErronkaOndo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

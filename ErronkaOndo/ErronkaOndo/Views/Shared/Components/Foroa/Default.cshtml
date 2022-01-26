@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ErronkaOndo.Models.Komentario>
+
+@{
+    ViewData["Title"] = "Default";
+}
+
+
+
+
+
+
+
+@foreach (var item in Model)
+{<div class="testua">
+
+        <div class="row">
+            <div class="col-2">
+
+
+                <img class="irudiforo" src="~/images/person.png" />
+
+            </div>
+            <div class="col-6 testuaforo ">
+
+                <b>  @Html.DisplayFor(modelItem => item.erabiltzailea) </b> <br />
+                @Html.DisplayFor(modelItem => item.testua)
+                <br />
+
+            </div>
+
+            <div class="col-3">
+                <b>Partida id</b><br />
+                @Html.DisplayFor(modelItem => item.partidaId)
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+}
+
+
+<div class="col-7 ">
+
+
+
+
+</div>
+
+
+

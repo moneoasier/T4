@@ -19,11 +19,7 @@ namespace ErronkaOndo.Controllers
         {
             _komentarioService = komentarioService;
         }
-        // GET: KomentarioController
-        public ActionResult Index()
-        {
-            return View();
-        }
+        
 
         // GET: KomentarioController/Details/5
         public ActionResult Details(int id)
@@ -32,7 +28,7 @@ namespace ErronkaOndo.Controllers
         }
 
         // GET: KomentarioController/Create
-        public ActionResult Create(int partidaId)
+        public ActionResult Index(int partidaId)
         {
             ViewBag.partidaId = partidaId;
             return View();
@@ -41,12 +37,12 @@ namespace ErronkaOndo.Controllers
         // POST: KomentarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Komentario komentario)
+        public ActionResult Index(Komentario komentario)
         {
             try
             {
                 _komentarioService.Gehitu(komentario);
-               return RedirectToAction("Index");
+                return View();
             }
             catch
             {

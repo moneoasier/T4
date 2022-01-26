@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h/eMKVVCzKCS+nQNjAsqn+RpbM2ds7AbYuTfP5jxOAn4WCRicHs9m5QvgpswRIlmtiyJH8I3zWrtVHgEHUb0Ig==",
+  "dgSpecHash": "HzGxFhKHGKNJjCuvZNdWP4/YXRMXAbQHBG9FOvel/02s09iptgZ6Py7grPkxfDQ0Rfxw7uFjmFUma+nZlxtm2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\moneo.asier\\Desktop\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj",
+  "projectFilePath": "C:\\Users\\moneo.asier\\Documents\\GitHub\\T4\\ErronkaOndo\\ErronkaOndo\\ErronkaOndo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moneo.asier\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\moneo.asier\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

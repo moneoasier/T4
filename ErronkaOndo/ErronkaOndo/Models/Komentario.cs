@@ -8,7 +8,9 @@ namespace ErronkaOndo.Models
 {
     public class Komentario
     {
-     
+        [Key]
+        [ScaffoldColumn(false)]
+        public int komentarioId { get; set; }
         public string testua { get; set; }
         public string erabiltzailea { get; set; }
         public int partidaId { get; set; }

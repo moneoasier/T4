@@ -11,6 +11,6 @@ namespace ErronkaOndo.Services
 
 
         Task Gehitu(Komentario komentario);
-
+       Task <IList<Komentario>> Erakutsi();
     }
 }
