@@ -3358,3 +3358,18 @@ text-align:left;
     height: 30%;
     margin: auto;
 }
+textarea {
+    resize: none;
+}
+
+.bar {
+    
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.bar::-webkit-scrollbar {
+    
+    display:none;
+    
+ }

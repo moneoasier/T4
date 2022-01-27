@@ -10,38 +10,40 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.Controllers
 {
-  [Authorize]
-    public class KomentarioController : Controller
+    [Authorize]
+    public class InkestaController : Controller
     {
-        private readonly IkomentarioService _komentarioService;
+        private readonly IinkestaService _inkestaService;
 
-        public KomentarioController(IkomentarioService komentarioService)
+
+        public InkestaController(IinkestaService inkestaService)
         {
-            _komentarioService = komentarioService;
+            _inkestaService = inkestaService;
         }
-        
 
-        // GET: KomentarioController/Details/5
+        // GET: InkestaController
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        // GET: InkestaController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: KomentarioController/Create
-        public ActionResult Index(int partidaId)
-        {
-            ViewBag.partidaId = partidaId;
-            return View();
-        }
+       
 
-        // POST: KomentarioController/Create
+        // POST: InkestaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index(Komentario komentario)
+        public ActionResult Index(Inkesta inkesta)
         {
             try
             {
-                _komentarioService.Gehitu(komentario);
+                _inkestaService.Bidali(inkesta);
+
                 return View();
             }
             catch
@@ -50,13 +52,13 @@ namespace ErronkaOndo.Controllers
             }
         }
 
-        // GET: KomentarioController/Edit/5
+        // GET: InkestaController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: KomentarioController/Edit/5
+        // POST: InkestaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -71,13 +73,13 @@ namespace ErronkaOndo.Controllers
             }
         }
 
-        // GET: KomentarioController/Delete/5
+        // GET: InkestaController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: KomentarioController/Delete/5
+        // POST: InkestaController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

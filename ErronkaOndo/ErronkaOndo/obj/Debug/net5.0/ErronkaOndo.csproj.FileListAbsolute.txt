@@ -330,3 +330,5 @@ C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\ErronkaOndo.pdb
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\ErronkaOndo.genruntimeconfig.cache
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Shared\Components\Foroa\Default.cshtml.g.cs
+C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Inkesta\Create.cshtml.g.cs
+C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Inkesta\Index.cshtml.g.cs

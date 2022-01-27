@@ -43,6 +43,7 @@ namespace ErronkaOndo
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddScoped<IPartidaService, PartidaService>();
             services.AddScoped<IkomentarioService, KomentarioService>();
+            services.AddScoped<IinkestaService, InkestaService>();
             services.AddControllersWithViews();
 
 

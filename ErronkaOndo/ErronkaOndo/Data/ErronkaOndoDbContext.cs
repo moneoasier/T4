@@ -13,6 +13,7 @@ namespace ErronkaOndo.Data
         {
         }
         public DbSet<Komentario> Komentario { get; set; }
+        public DbSet<Inkesta> Inkesta { get; set; }
 
 
     }
