@@ -20,7 +20,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.print.attribute.standard.DateTimeAtCompleted;
 
@@ -31,6 +33,7 @@ public class EskatzaileaController {
 		List<Partida> partidaDatak;
 		List<Partida> top3= new ArrayList<Partida>();
 		
+		
 	   @Autowired
 	   private PartidaDAO partidaDao;
 
@@ -38,6 +41,9 @@ public class EskatzaileaController {
 	   @GetMapping("partidakFame")
 	    public List<Partida> getPartidakFame() {
 		   partidaOrdenatuak=partidaDao.findAll();
+		   
+		   List<Partida> partidakFame= new ArrayList<Partida>();
+		   
 		   
 		   Collections.sort(partidaOrdenatuak, new Comparator<Partida>() {
 				@SuppressWarnings("removal")
@@ -47,8 +53,21 @@ public class EskatzaileaController {
 					return new Integer(p2.getPuntuazioa()).compareTo(new Integer(p1.getPuntuazioa()));
 				}
 			});
-		   
-	        return partidaOrdenatuak;
+  
+		 for(int i=0;i<partidaOrdenatuak.size();i++) {
+			 int pepe=0;
+			 if(partidakFame.size()>0) {
+				 for(int j=0;j<partidakFame.size();j++) {
+					 if(partidaOrdenatuak.get(i).getEmployeeid() == partidakFame.get(j).getEmployeeid()) {
+						 pepe=1;
+					 }
+				 }
+			 }
+			 if (pepe == 0) {
+				 partidakFame.add(partidaOrdenatuak.get(i));
+			 }
+		 }
+	        return partidakFame;
 	    }
 	   
 	   
@@ -87,6 +106,8 @@ public class EskatzaileaController {
 	    public List<Partida> getPartidakShame() {
 		   partidaOrdenatuak=partidaDao.findAll();
 		   
+		   List<Partida> partidakShame= new ArrayList<Partida>();
+		   
 		   Collections.sort(partidaOrdenatuak, new Comparator<Partida>() {
 				@SuppressWarnings("removal")
 				@Override
@@ -95,8 +116,21 @@ public class EskatzaileaController {
 					return new Integer(p1.getPuntuazioa()).compareTo(new Integer(p2.getPuntuazioa()));
 				}
 			});
+		   for(int i=0;i<partidaOrdenatuak.size();i++) {
+				 int pepe=0;
+				 if(partidakShame.size()>0) {
+					 for(int j=0;j<partidakShame.size();j++) {
+						 if(partidaOrdenatuak.get(i).getEmployeeid() == partidakShame.get(j).getEmployeeid()) {
+							 pepe=1;
+						 }
+					 }
+				 }
+				 if (pepe == 0) {
+					 partidakShame.add(partidaOrdenatuak.get(i));
+				 }
+			 }
 		   
-	        return partidaOrdenatuak;
+	        return partidakShame;
 	    }
 	   
 
