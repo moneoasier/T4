@@ -48,37 +48,23 @@
                     <div class="testua">
 
 
-                        <form asp-action="Index">
+                        <form asp-action="Index"  method="post">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="form-group">
                                 <label asp-for="puntuazioa" class="control-label"> 1-10 Zenbat gustatu zaizu jokua?</label>
                                 <br />
 
 
-                                <input asp-for="puntuazioa" name="radio" value="1" id="bat" type="radio" />
-                                <label>1</label>
-                                <input asp-for="puntuazioa" name="radio" value="2" id="bi" type="radio" />
-                                <label>2</label>
-                                <input asp-for="puntuazioa" name="radio" value="3" id="hiru" type="radio" />
-                                <label>3</label>
-                                <input asp-for="puntuazioa" name="radio" value="4" id="lau" type="radio" />
-                                <label>4</label>
-                                <input asp-for="puntuazioa" name="radio" value="5" id="bost" type="radio" />
-                                <label>5</label>
-                                <input asp-for="puntuazioa" name="radio" value="6" id="sei" type="radio" />
-                                <label>6</label>
-                                <input asp-for="puntuazioa" name="radio" value="7" id="zazpi" type="radio" />
-                                <label>7</label>
-                                <input asp-for="puntuazioa" name="radio" value="8" id="zortzi" type="radio" />
-                                <label>8</label>
-                                <input asp-for="puntuazioa" name="radio" value="9" id="bederatzi" type="radio" />
-                                <label>9</label>
-                                <input asp-for="puntuazioa" name="radio" value="10" id="hamar" type="radio" />
-                                <label>10</label>
-
-
-
-
+                                @Html.RadioButtonFor(m => m.puntuazioa, 1)<span>1</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 2)<span>2</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 3)<span>3</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 4)<span>4</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 5)<span>5</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 6)<span>6</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 7)<span>7</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 8)<span>8</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 9)<span>9</span>
+                                @Html.RadioButtonFor(m => m.puntuazioa, 10)<span>10</span>
 
                                 <span asp-validation-for="puntuazioa" class="text-danger"></span>
 
@@ -88,16 +74,11 @@
                                 <br />
 
 
-                                <input asp-for="gomendioa" name="radiob" value="1" id="bat" type="radio" />
-                                <label>1</label>
-                                <input asp-for="gomendioa" name="radiob" value="2" id="bi" type="radio" />
-                                <label>2</label>
-                                <input asp-for="gomendioa" name="radiob" value="3" id="hiru" type="radio" />
-                                <label>3</label>
-                                <input asp-for="gomendioa" name="radiob" value="4" id="lau" type="radio" />
-                                <label>4</label>
-                                <input asp-for="gomendioa" name="radiob" value="5" id="bost" type="radio" />
-                                <label>5</label>
+                                @Html.RadioButtonFor(m => m.gomendioa, 1)<span>1</span>
+                                @Html.RadioButtonFor(m => m.gomendioa, 2)<span>2</span>
+                                @Html.RadioButtonFor(m => m.gomendioa, 3)<span>3</span>
+                                @Html.RadioButtonFor(m => m.gomendioa, 4)<span>4</span>
+                                @Html.RadioButtonFor(m => m.gomendioa, 5)<span>5</span>
 
                                 <span asp-validation-for="gomendioa" class="text-danger"></span>
                             </div>
@@ -106,29 +87,23 @@
                                 <label asp-for="jokugaia" class="control-label">Enpresak beste joku bat garatzen badu, zer gaia aukeratuko zenuke? </label>
                                 <br />
 
-                                <input asp-for="jokugaia" name="radiobu" value="multiplayer" id="bat" type="radio" />
-                                <label>Multiplayer</label>
-                                <input asp-for="jokugaia" name="radiobu" value="soziala" id="bi" type="radio" />
-                                <label>Soziala</label>
-                                <input asp-for="jokugaia" name="radiobu" value="mahai-jokoa" id="hiru" type="radio" />
-                                <label>Mahai-jokoa</label>
-                                <input asp-for="jokugaia" name="radiobu" value="estrategia" id="lau" type="radio" />
-                                <label>Estrategia</label>
-                                <input asp-for="jokugaia" name="radiobu" value="arkade" id="bost" type="radio" />
-                                <label>Arkade</label>
-
-
+                                @Html.RadioButtonFor(m => m.jokugaia, "multiplayer")<span>Multiplayer</span>
+                                @Html.RadioButtonFor(m => m.jokugaia, "soziala")<span>Soziala</span>
+                                @Html.RadioButtonFor(m => m.jokugaia, "mahai-jokoa")<span>Mahai-jokoa</span>
+                                @Html.RadioButtonFor(m => m.jokugaia, "estrategia")<span>Estrategia</span>
+                                @Html.RadioButtonFor(m => m.jokugaia, "arkade")<span>Arkade</span>
+                               
+                              
                                 <span asp-validation-for="jokugaia" class="text-danger"></span>
                             </div>
 
                             <div class="form-group">
                                 <label asp-for="gustora" class="control-label">Zelan zaude enpresan?</label>
-                                <input asp-for="gustora" name="radiobut" value="Oso gustora" id="bat" type="radio" />
-                                <label>Oso gustora</label>
-                                <input asp-for="gustora" name="radiobut" value="Gustora" id="bi" type="radio" />
-                                <label>Gustora</label>
-                                <input asp-for="gustora" name="radiobut" value="Ez gustora" id="hiru" type="radio" />
-                                <label>Ez gustora</label>
+
+                                @Html.RadioButtonFor(m => m.gustora, "Oso gustora")<span>Oso gustora</span>
+                                @Html.RadioButtonFor(m => m.gustora, "Gustora")<span>Gustora</span>
+                                @Html.RadioButtonFor(m => m.gustora, "Ez gustora")<span>Ez gustora</span>
+                        
                                 <span asp-validation-for="gustora" class="text-danger"></span>
                             </div>
                             <div class="form-group">
@@ -138,7 +113,7 @@
                                 <span asp-validation-for="hobekuntza" class="text-danger"></span>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Bidali" class="btn btn-primary" />
+                                <input type="submit" asp-controller="Home" asp-action="Index" value="Bidali" class="btn btn-primary" />
                             </div>
                         </form>
 

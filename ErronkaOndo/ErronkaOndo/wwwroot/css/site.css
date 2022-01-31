@@ -3373,3 +3373,7 @@ textarea {
     display:none;
     
  }
+
+.error {
+    margin-top: 15%;
+}

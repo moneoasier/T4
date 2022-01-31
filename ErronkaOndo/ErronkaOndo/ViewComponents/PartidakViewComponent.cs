@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.ViewComponents
 {
-    [ViewComponent(Name = "Foroa")]
+    [ViewComponent(Name = "Partidak")]
     public class PartidakViewComponent : ViewComponent
     {
 
