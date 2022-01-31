@@ -28,6 +28,11 @@ import javax.print.attribute.standard.DateTimeAtCompleted;
 
 @RestController
 @RequestMapping("/")
+/**
+ * Mapping-aren bidez zer eskaera egiten diren kudeatzen du
+ * @author hayar.abderrafia
+ *
+ */
 public class EskatzaileaController {
 		List<Partida> partidaOrdenatuak;
 		List<Partida> partidaDatak;
@@ -37,7 +42,10 @@ public class EskatzaileaController {
 	   @Autowired
 	   private PartidaDAO partidaDao;
 
-	
+	   /**
+	    * partidaFame Mapping-aren bidez bezero bakoitzaren puntuazio onena erakusten du eta ordenatzen du
+	    * @return
+	    */
 	   @GetMapping("partidakFame")
 	    public List<Partida> getPartidakFame() {
 		   partidaOrdenatuak=partidaDao.findAll();
@@ -70,7 +78,10 @@ public class EskatzaileaController {
 	        return partidakFame;
 	    }
 	   
-	   
+	   /**
+	    * partidakTop3 Mapping-aren bidez 3 partida onenak kontsultatzen ditu
+	    * @return
+	    */
 	   @GetMapping("partidakTop3")
 	   public List<Partida> getTop3(){
 		   
@@ -86,14 +97,21 @@ public class EskatzaileaController {
 		   
 	   }
 	   
-	   
+	   /**
+	    * partidak Mapping-aren bidez jokatu diren partida guztiak kontsultatzen ditu
+	    * @return
+	    */
 	   @GetMapping("partidak")
 	    public List<Partida> getPartidak() {
 		
 		   
 	        return partidaDao.findAll();
 	    }
-	   
+	   /**
+	    * partidaEmployee Mapping-aren bidez, bidalitako langilearen Id-aren partidak kontsultatzen ditu
+	    * @param employee
+	    * @return
+	    */
 	   @GetMapping("partidaEmployee")
 		public List<Partida> partidaEmployee(@RequestParam(value = "employee", defaultValue = "1") int employee) {
 			
@@ -102,6 +120,10 @@ public class EskatzaileaController {
 			
 		}
 	
+	   /**
+	    * partidaFame Mapping-aren bidez bezero bakoitzaren puntuazio txarrena erakusten du eta ordenatzen du
+	    * @return
+	    */
 	   @GetMapping("partidakShame")
 	    public List<Partida> getPartidakShame() {
 		   partidaOrdenatuak=partidaDao.findAll();

@@ -26,13 +26,25 @@ public class PartidaDAO {
     private MongoClient client;
     private MongoCollection<Partida> collection;
 
+    /**
+     * Zein datubasetik eta zein kolekziotikn hartu behar den definitu
+     */
     @PostConstruct
     void datuakKargatu() {
         collection = client.getDatabase("datuak").getCollection("puntuazioa",Partida.class);
     }
+    /**
+     * Datu basetik kolekzioaren datu guztiak kontsultatu
+     * @return
+     */
     public List<Partida> findAll(){
     	return collection.find().into(new ArrayList<>());
     }
+    /**
+     * Langilearen arabera datu basetik kolekzioaren datuak kontsultatu
+     * @param employee
+     * @return
+     */
     
     public List<Partida> findEmployee(int employee){
     	 Bson filter=Filters.eq("employeeid",employee);

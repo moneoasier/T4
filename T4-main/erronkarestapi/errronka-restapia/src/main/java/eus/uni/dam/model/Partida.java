@@ -1,7 +1,11 @@
 package eus.uni.dam.model;
 
 import java.util.Date;
-
+/**
+ * Partida klasea 
+ * @author hayar.abderrafia
+ *
+ */
 public class Partida {
 
 private int partidaId;

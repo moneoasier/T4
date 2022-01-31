@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import eus.uni.dam.dao.PartidaDAO;
 
+
 @SpringBootApplication
 public class App {
 	
