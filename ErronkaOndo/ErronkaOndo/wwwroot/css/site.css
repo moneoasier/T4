@@ -3374,6 +3374,79 @@ textarea {
     
  }
 
-.error {
-    margin-top: 15%;
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
+
+    .box h4 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .box input[type = "text"], .box input[type = "password"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid white;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.45s;
+    }
+
+        .box input[type = "text"]:focus, .box input[type = "password"]:focus {
+            width: 240px;
+            border-color: white;
+        }
+
+    .box input[type = "submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid white;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+        .box input[type = "submit"]:hover {
+            background: white;
+            color: black;
+        }
+
+    .box a:link {
+        color: #5fb962;
+    }
+
+    .box a:visited {
+        color: white;
+    }
+
+    .box a:hover {
+        color: #9BD770;
+    }
+.zuriune {
+margin-top:15%;
+
+}
+
+
