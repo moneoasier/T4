@@ -9,6 +9,10 @@ namespace ErronkaOndo.Data
 {
     public class ErronkaOndoDbContext : DbContext
     {
+        /// <summary>
+        /// DbContext-a ezartzen da klase honetan
+        /// </summary>
+        /// <param name="options"></param>
         public ErronkaOndoDbContext(DbContextOptions<ErronkaOndoDbContext> options): base(options)
         {
         }

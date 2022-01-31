@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.Models
 {
+    /// <summary>
+    /// Inkesta klasea
+    /// </summary>
     public class Inkesta
     {
         [Key]

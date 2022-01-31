@@ -112,7 +112,7 @@ public class ImportConfig {
 		employees = dout.getEmployees();
 		partidak=dout.getPartidak();
 		
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+	//	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 	
 
 		LocalDateTime date = LocalDateTime.now();
@@ -121,19 +121,18 @@ public class ImportConfig {
 		try {
 		
 	            
-			JSONArray a = (JSONArray) parser.parse(new FileReader("C:\\prueba.json"));
+			JSONObject a = (JSONObject) parser.parse(new FileReader("C:\\prueba.json"));
 			
 			int i=partidak.size();
 			int g = partidak.size();
 
 
-				for (Object o : a) {
 				
-				JSONObject jsonObject = (JSONObject) o;
+				
+				JSONObject jsonObject = (JSONObject) a;
 				String puntuazioa = String.valueOf(jsonObject.get("puntuazioa"));
 				String adina = String.valueOf(jsonObject.get("adina"));
 				String departamentua = String.valueOf(jsonObject.get("departamentua"));
-				date = LocalDateTime.parse((String) jsonObject.get("data"),formatter);
 				String employeeid = (String) String.valueOf(jsonObject.get("employeeid"));
 				
 
@@ -142,7 +141,7 @@ public class ImportConfig {
 				partidamongo.add(p);
 				dout.update(p);
 
-			}
+			
 				
 				
 				

@@ -11,14 +11,17 @@ namespace ErronkaOndo.ViewComponents
     public class PartidaShameViewComponent : ViewComponent
     {
         private readonly IPartidaService _partidaService;
-
+        /// <summary>
+        /// IpartidaService dependentzia injektatzen da
+        /// </summary>
+        /// <param name="partidaService"></param>
         public PartidaShameViewComponent(IPartidaService partidaService)
         {
             _partidaService = partidaService;
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View(await _partidaService.GetPartidaShame());
+            return View(await _partidaService.GetPartida());
 
         }
 

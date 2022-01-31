@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ErronkaOndo</name>
+    </assembly>
+    <members>
+        <member name="T:ErronkaOndo.Controllers.HomeController">
+            <summary>
+            HomeController kontroladorea
+            </summary>
+        </member>
+        <member name="T:ErronkaOndo.Controllers.InkestaController">
+            <summary>
+            InkestaController kontroladorea
+            </summary>
+        </member>
+        <member name="T:ErronkaOndo.Controllers.KomentarioController">
+            <summary>
+            KomentarioController kontroladorea
+            </summary>
+        </member>
+        <member name="M:ErronkaOndo.Data.ErronkaOndoDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{ErronkaOndo.Data.ErronkaOndoDbContext})">
+            <summary>
+            DbContext-a ezartzen da klase honetan
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:ErronkaOndo.Models.Inkesta">
+            <summary>
+            Inkesta klasea
+            </summary>
+        </member>
+        <member name="T:ErronkaOndo.Models.Komentario">
+            <summary>
+            Komentario klasea
+            </summary>
+        </member>
+        <member name="T:ErronkaOndo.Models.Partida">
+            <summary>
+            Partida klasea
+            </summary>
+        </member>
+        <member name="M:ErronkaOndo.Services.InkestaService.Bidali(ErronkaOndo.Models.Inkesta)">
+            <summary>
+            Datuak datu basera bidaltzen ditu eta gordetzen ditu
+            </summary>
+            <param name="inkesta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ErronkaOndo.Services.KomentarioService.Erakutsi">
+            <summary>
+            SQL server-en dauden komentarioak erakusten ditu
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ErronkaOndo.Services.KomentarioService.Gehitu(ErronkaOndo.Models.Komentario)">
+            <summary>
+            SQL server-en komentarioak sartzen ditu
+            </summary>
+            <param name="komentario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ErronkaOndo.Services.PartidaService.GetPartida">
+            <summary>
+            Partidak lortzen ditu Rest api-tik
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ErronkaOndo.Services.PartidaService.GetPartidaShame">
+            <summary>
+            Rest api-tik Hall of shame partidak hartzen ditu
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ErronkaOndo.ViewComponents.ForoaViewComponent.#ctor(ErronkaOndo.Services.IkomentarioService)">
+            <summary>
+            IkomentarioService dependentzia injektatzen da
+            </summary>
+            <param name="komentarioservice"></param>
+        </member>
+        <member name="M:ErronkaOndo.ViewComponents.PartidakViewComponent.#ctor(ErronkaOndo.Services.IPartidaService)">
+            <summary>
+            IpartidaService dependentzia injektatzen da
+            </summary>
+            <param name="partidaService"></param>
+        </member>
+        <member name="M:ErronkaOndo.ViewComponents.PartidaShameViewComponent.#ctor(ErronkaOndo.Services.IPartidaService)">
+            <summary>
+            IpartidaService dependentzia injektatzen da
+            </summary>
+            <param name="partidaService"></param>
+        </member>
+        <member name="M:ErronkaOndo.ViewComponents.PartidaViewComponent.#ctor(ErronkaOndo.Services.IPartidaService)">
+            <summary>
+            IpartidaService dependentzia injektatzen da
+            </summary>
+            <param name="partidaService"></param>
+        </member>
+    </members>
+</doc>

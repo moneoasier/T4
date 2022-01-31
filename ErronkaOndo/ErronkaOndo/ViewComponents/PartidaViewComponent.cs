@@ -10,7 +10,10 @@ namespace ErronkaOndo.ViewComponents
     public class PartidaViewComponent:ViewComponent
     {
         private readonly IPartidaService _partidaService;
-
+        /// <summary>
+        /// IpartidaService dependentzia injektatzen da
+        /// </summary>
+        /// <param name="partidaService"></param>
         public PartidaViewComponent(IPartidaService partidaService)
         {
             _partidaService = partidaService;

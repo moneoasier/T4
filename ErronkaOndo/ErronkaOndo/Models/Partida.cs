@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.Models
 {
+    /// <summary>
+    /// Partida klasea
+    /// </summary>
     public class Partida
     {
         public int partidaId { get; set; }

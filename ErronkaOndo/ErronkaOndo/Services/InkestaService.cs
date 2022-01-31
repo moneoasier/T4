@@ -19,6 +19,11 @@ namespace ErronkaOndo.Services
 
         }
 
+        /// <summary>
+        /// Datuak datu basera bidaltzen ditu eta gordetzen ditu
+        /// </summary>
+        /// <param name="inkesta"></param>
+        /// <returns></returns>
 
         public async Task Bidali(Inkesta inkesta) {
 

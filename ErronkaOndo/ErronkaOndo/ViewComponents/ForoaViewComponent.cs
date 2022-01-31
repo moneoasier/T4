@@ -12,7 +12,11 @@ namespace ErronkaOndo.ViewComponents
     {
 
             private readonly IkomentarioService _komentarioservice;
-
+        /// <summary>
+        /// IkomentarioService dependentzia injektatzen da
+        /// </summary>
+        /// <param name="komentarioservice"></param>
+        
             public ForoaViewComponent(IkomentarioService komentarioservice)
             {
                 _komentarioservice = komentarioservice;

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.Models
 {
+    /// <summary>
+    /// Komentario klasea
+    /// </summary>
     public class Komentario
     {
         [Key]

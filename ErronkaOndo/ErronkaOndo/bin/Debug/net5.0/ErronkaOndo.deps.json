@@ -40,6 +40,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "docfx.console": "2.59.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -324,6 +325,7 @@
           "ErronkaOndo.dll": {}
         }
       },
+      "docfx.console/2.59.0": {},
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -3671,6 +3673,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "docfx.console/2.59.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OmHpFa3TGrvWC5371OV5PJxhoOsJH6xSrTCb/rght10XMIdtNRR4VDuHVkBIS1YfpgDx/5gBYCtkmVDWjjj0ig==",
+      "path": "docfx.console/2.59.0",
+      "hashPath": "docfx.console.2.59.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

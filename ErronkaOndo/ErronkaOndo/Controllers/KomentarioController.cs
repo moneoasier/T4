@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.Controllers
 {
+    /// <summary>
+    /// KomentarioController kontroladorea
+    /// </summary>
   [Authorize]
     public class KomentarioController : Controller
     {

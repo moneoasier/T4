@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace ErronkaOndo.Controllers
 {
+    /// <summary>
+    /// HomeController kontroladorea
+    /// </summary>
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
