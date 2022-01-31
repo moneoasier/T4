@@ -1,7 +1,0 @@
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\bin\Debug\DokuErronkaOndo.xml
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\bin\Debug\DokuErronkaOndo.dll
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\bin\Debug\DokuErronkaOndo.pdb
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\obj\Debug\DokuErronkaOndo.csproj.AssemblyReference.cache
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\obj\Debug\DokuErronkaOndo.csproj.CoreCompileInputs.cache
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\obj\Debug\DokuErronkaOndo.dll
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\DokuErronkaOndo\obj\Debug\DokuErronkaOndo.pdb
