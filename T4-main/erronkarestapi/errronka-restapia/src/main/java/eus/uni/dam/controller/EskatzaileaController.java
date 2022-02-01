@@ -155,6 +155,14 @@ public class EskatzaileaController {
 	        return partidakShame;
 	    }
 	   
+	   @GetMapping("partidaKopurua")
+	    public String getPartidaKopurua() {
+		
+		   
+		   
+	        return "Jolastu diren partida kopurua: "+partidaDao.findPartidaKop();
+	        
+	   }
 
 	   
 	   
