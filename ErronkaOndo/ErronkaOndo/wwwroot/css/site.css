@@ -1,20 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿
 
-
-
-/*!
- * Project_Name: Themezy Band Template
- * Author: Themezy
- * Email: info@themezy.com
- * URL: http://themezy.com
- */
-/*=========================================== 
- * Importing CSS Libraries
- *===========================================*/
-/* line 45, sass/libs/_normalize.scss */
-
-/* line 97, sass/libs/_normalize.scss */
 html {
     background: #91EDEF;
     background: #91EDEF;
@@ -26,7 +11,7 @@ html {
 
 
 
-/* line 1, sass/libs/_global.scss */
+
 body {
     background-color: #91EDEF;
     color: #848484;
@@ -74,6 +59,8 @@ body {
         display: block;
         padding-bottom: 100%;
     }
+
+
 footer {
     background-color: #4E3B31;
     

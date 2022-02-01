@@ -85,5 +85,25 @@ namespace ErronkaOndo.Services
             }
             return partidaList;
         }
+
+        public async Task<int> Getpartidakopurua()
+        {
+            int partida;
+            Uri rutaPartidak = new Uri(rutaTodos, "partidakKopurua");
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(rutaPartidak))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    partida = JsonConvert.DeserializeObject<int>(apiResponse);
+                }
+            }
+            return partida;
+        }
+
+        
+
+
+
     }
 }
