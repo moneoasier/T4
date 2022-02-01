@@ -76,8 +76,8 @@ public class ImportConfig {
 	
 	public static void main(String[] args) throws IOException {
 		
-		
-		
+		int hariZenbatzailea =0;
+		HariZerbitzaria hariZerbitzaria;
 		
 		while(true) {
 
@@ -87,22 +87,37 @@ public class ImportConfig {
         //accept method, return socket object
         Socket server = ss.accept();
         //Get input object, read file
-        BufferedInputStream bis = new BufferedInputStream(server.getInputStream());
+       // BufferedInputStream bis = new BufferedInputStream(server.getInputStream());
         //Save to local
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("C:\\prueba.json"));
+    //    BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("C:\\prueba.json"));
 
         //Create byte array
-        byte[] b = new byte[1024 * 8];
+   //     byte[] b = new byte[1024 * 8];
         //Read character array
-        int len;
-        while ((len = bis.read(b)) != -1) {
-            bos.write(b, 0, len);
-        }
-	
+   //     int len;
+    //    while ((len = bis.read(b)) != -1) {
+  //          bos.write(b, 0, len);
+   //     }
+//	
         //close resource
         
-        bos.close();
-        bis.close();
+   //     bos.close();
+   //     bis.close();
+        
+    
+		BufferedInputStream bis = new BufferedInputStream(server.getInputStream());
+		BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("C:\\prueba.json"));
+	
+        hariZenbatzailea++;
+		hariZerbitzaria = new HariZerbitzaria(hariZenbatzailea, server, bis, bos);
+		hariZerbitzaria.start(); // haria martxan jarri eta buklean jarraitu
+        
+        try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
         server.close();
         ss.close();
         

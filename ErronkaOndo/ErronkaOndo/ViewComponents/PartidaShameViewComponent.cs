@@ -21,7 +21,7 @@ namespace ErronkaOndo.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View(await _partidaService.GetPartida());
+            return View(await _partidaService.GetPartidaShame());
 
         }
 

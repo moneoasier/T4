@@ -8543,6 +8543,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "System.Text.Encoding >= 4.3.0",
       "docfx.console >= 2.59.0"
     ]
   },
@@ -8620,6 +8621,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "System.Text.Encoding": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           },
           "docfx.console": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

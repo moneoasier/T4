@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-    <title>Band Name</title>
+   
     <!-- Loading third party fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
     <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -27,58 +27,61 @@
 <body>
 
 
-        <main class="main-content">
+    <main class="main-content">
 
-            <div class="izenburua container">
+        <div class="izenburua container">
 
-                <h2><b>Foroa</b></h2>
-        
+            <h2 class="zentratuizenburu"><b>Foroa</b></h2>
+
+        </div>
+
+        <div class="row">
+            <div class="col-5 ">
+
+
+                @await Component.InvokeAsync("Foroa")
             </div>
+            <div class="col-2 ">
+                <a asp-controller="Report" asp-action="InprimatuKomentario"> <img src="~/images/Reportimg.png" />  </a>
 
-            <div class="row">
-                <div class="col-5 ">
+            </div>
+            <div class="col-5">
+                <div class="testua">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <form asp-action="Index">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-
-                    @await Component.InvokeAsync("Foroa")
-                </div>
-                <div class="col-2 ">
-                    </div>
-                <div class="col-5">
-                    <div class="testua">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-6">
-                                <form asp-action="Index">
-                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                                    <div class="form-group">
-                                        <label asp-for="testua" class="control-label"></label>
-                                        <input asp-for="testua" class="form-control" />
-                                        <span asp-validation-for="testua" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label asp-for="erabiltzailea" class="control-label"></label>
-                                        <input asp-for="erabiltzailea" class="form-control" />
-                                        <span asp-validation-for="erabiltzailea" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label asp-for="partidaId" class="control-label"></label>
-                                        <input asp-for="partidaId" class="form-control" value="@ViewBag.partidaId" />
-                                        <span asp-validation-for="partidaId" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" value="Komentatu" class="btn btn-primary" />
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-3"></div>
+                                <div class="form-group">
+                                    <label asp-for="testua" class="control-label"></label>
+                                    <input asp-for="testua" class="form-control" />
+                                    <span asp-validation-for="testua" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="erabiltzailea" class="control-label"></label>
+                                    <input asp-for="erabiltzailea" class="form-control" />
+                                    <span asp-validation-for="erabiltzailea" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="partidaId" class="control-label"></label>
+                                    <input asp-for="partidaId" class="form-control" value="@ViewBag.partidaId" />
+                                    <span asp-validation-for="partidaId" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Komentatu" class="btn btn-primary" />
+                                </div>
+                            </form>
                         </div>
+                        <div class="col-3"></div>
                     </div>
-                  
-
                 </div>
+
+
             </div>
-        </main> <!-- .main-content -->
+        </div>
+       
+    </main> <!-- .main-content -->
 
 
 
