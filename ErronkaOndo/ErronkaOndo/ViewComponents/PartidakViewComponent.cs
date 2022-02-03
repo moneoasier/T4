@@ -20,9 +20,9 @@ namespace ErronkaOndo.ViewComponents
         {
             _partidaService = partidaService;
         }
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(string employee)
         {
-            return View(await _partidaService.GetPartidaPertsona());
+            return View(await _partidaService.GetPartidaPertsona(employee));
 
         }
 

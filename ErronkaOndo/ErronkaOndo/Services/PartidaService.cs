@@ -54,11 +54,11 @@ namespace ErronkaOndo.Services
             return partidaList;
         }
 
-        /*
-        public async Task<IList<Partida>> GetPartidaPertsona(int employeeId)
+        
+        public async Task<List<Partida>> GetPartidaPertsona(string employee)
         {
             List<Partida> partidaList = new List<Partida>();
-            Uri rutaPartidak = new Uri(rutaTodos, "partidakShame?employee");
+            Uri rutaPartidak = new Uri(rutaTodos, "partidaEmployee?employee="+employee);
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync(rutaPartidak))
@@ -69,22 +69,7 @@ namespace ErronkaOndo.Services
             }
             return partidaList;
         }
-        */
-       
-        public async Task<IList<Partida>> GetPartidaPertsona()
-        {
-            List<Partida> partidaList = new List<Partida>();
-            Uri rutaPartidak = new Uri(rutaTodos, "partidakShame?employee");
-            using (var httpClient = new HttpClient())
-            {
-                using (var response = await httpClient.GetAsync(rutaPartidak))
-                {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    partidaList = JsonConvert.DeserializeObject<List<Partida>>(apiResponse);
-                }
-            }
-            return partidaList;
-        }
+        
 
         public async Task<int> Getpartidakopurua()
         {
@@ -100,10 +85,6 @@ namespace ErronkaOndo.Services
             }
             return partida;
         }
-
-        
-
-
 
     }
 }

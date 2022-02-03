@@ -360,3 +360,4 @@ C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\RdlCompile.compiled
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\wwwroot\Reports\Report2.rdlc
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\wwwroot\Reports\Report3.rdlc
+C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Home\PartidakEmployee.cshtml.g.cs
