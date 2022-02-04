@@ -2,7 +2,9 @@ package eus.uni.dam;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.Date;
+import java.sql.Timestamp;
 
 
 /**
@@ -17,20 +19,12 @@ public class ResPartner implements Serializable {
 
 	@Id
 	private Integer id;
-	
+
+	private Date date;
+
 	private String name;
 
-	
-	//bi-directional many-to-one association to PartidakPartidak
-//	@OneToMany(mappedBy="resPartner")
-	//private List<PartidakPartidak> partidakPartidaks;
-
 	public ResPartner() {
-	}	
-	
-	public ResPartner(Integer id,String name) {
-		this.id=id;
-		this.name=name;
 	}
 
 	public Integer getId() {
@@ -41,6 +35,17 @@ public class ResPartner implements Serializable {
 		this.id = id;
 	}
 
+	
+
+	public Date getDate() {
+		return this.date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	
 	public String getName() {
 		return this.name;
 	}
@@ -50,9 +55,5 @@ public class ResPartner implements Serializable {
 	}
 
 	
-	@Override
-	public String toString() {
-		return "ResPartner [id=" + id + ", name=" + name +"]";
-	}
 
 }

@@ -34,7 +34,7 @@
                 <h2><b>Inkesta</b></h2>
 
             </div>
-
+            <img src="~/images/inkesta.png" />
             
             <div class="row">
                 <div class="col-2">
@@ -48,7 +48,7 @@
                     <div class="testua">
 
 
-                        <form asp-action="Index"  method="post">
+                        <form asp-action="Index" class="inkestaform" method="post">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="form-group">
                                 <label asp-for="puntuazioa" class="control-label"> 1-10 Zenbat gustatu zaizu jokua?</label>
@@ -99,7 +99,7 @@
 
                             <div class="form-group">
                                 <label asp-for="gustora" class="control-label">Zelan zaude enpresan?</label>
-
+                                <br />
                                 @Html.RadioButtonFor(m => m.gustora, "Oso gustora")<span>Oso gustora</span>
                                 @Html.RadioButtonFor(m => m.gustora, "Gustora")<span>Gustora</span>
                                 @Html.RadioButtonFor(m => m.gustora, "Ez gustora")<span>Ez gustora</span>
@@ -113,7 +113,7 @@
                                 <span asp-validation-for="hobekuntza" class="text-danger"></span>
                             </div>
                             <div class="form-group">
-                                <input type="submit" asp-controller="Home" asp-action="Index" value="Bidali" class="btn btn-primary" />
+                                <input type="submit" asp-controller="Home" asp-action="Index" value="Bidali" class="btn btn-success" />
                             </div>
                         </form>
 

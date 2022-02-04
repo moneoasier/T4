@@ -290,3 +290,29 @@ body {
     min-height: 100px;
     background: green;
 }
+
+.inkestaform {
+
+padding-top:5px;
+padding-bottom:2px;
+
+}
+
+.beltza {
+color:black !important;
+
+}
+.goikospace {
+    padding-top: 2%;
+
+}
+.homeimg {
+    height: 550px;
+}
+
+.hometext {
+
+text-align:justify;
+
+
+}

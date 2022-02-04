@@ -16,15 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="wwwroot\Reports\Report1.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="wwwroot\Reports\Report1.rdlc" />
     <EmbeddedResource Include="wwwroot\Reports\Report2.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="wwwroot\Reports\Report3.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="wwwroot\Reports\Report3.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
