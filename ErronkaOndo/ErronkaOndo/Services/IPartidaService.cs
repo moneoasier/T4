@@ -11,7 +11,8 @@ namespace ErronkaOndo.Services
 
         Task<IList<Partida>> GetPartida();
         Task<IList<Partida>> GetPartidaShame();
-        Task<IList<Partida>> GetPartidaPertsona();
+        Task<List<Partida>> GetPartidaPertsona(string employee);
+        Task<int> Getpartidakopurua();
 
 
     }

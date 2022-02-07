@@ -30,9 +30,11 @@ namespace ErronkaOndo.Controllers
             var path = $"{_webHostEnvironment.WebRootPath}\\Reports\\Report1.rdlc";
             Dictionary<string, string> parameters = new Dictionary<string, string>();
             var fame = await _partidaService.GetPartida();
-
+            var kopuru = await _partidaService.Getpartidakopurua();
+            parameters.Add("rp1", kopuru.ToString() );
             LocalReport localReport = new LocalReport(path);
             localReport.AddDataSource("DataSetHallOfFame", fame);
+
             var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
             return File(result.MainStream, "application/pdf");
         }

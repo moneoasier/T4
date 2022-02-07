@@ -1,0 +1,154 @@
+﻿@model IEnumerable<ErronkaOndo.Models.Partida>
+
+@{
+    ViewData["Title"] = "PartidakEmployee";
+}
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+   
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="site.css">
+
+
+
+</head>
+
+<body class="header-collapse">
+
+
+
+
+
+    <main class="main-content">
+        <div class="container izenburua">
+
+            <h2 class="zentratuizenburu"><b>Partidak</b></h2>
+
+
+
+        </div>
+    <br />
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-2">
+
+
+                <img src="~/images/partidaicon.png" />
+
+
+            </div>
+
+
+            
+            <div class="col-5">
+            </div>
+        </div>
+        
+
+
+        <div class="testua ">
+
+            <div class="fullwidth-block testimonial-section">
+                <div class="container">
+                    <h5>Langile Id: @ViewData["empid"]</h5>
+                    <div class="quote-slider">
+
+                        <select name="employee" id="employee" data-id="@ViewData["empid"]">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+
+                        </select>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.partidaId)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.puntuazioa)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.data)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.employeeid)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.adina)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.departamentua)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.partidaId)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.puntuazioa)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.data)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.employeeid)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.adina)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.departamentua)
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main> <!-- .main-content -->
+    <br />
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/js/partidak.js">
+
+
+
+    </script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+

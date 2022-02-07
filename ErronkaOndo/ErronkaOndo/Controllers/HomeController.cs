@@ -17,11 +17,14 @@ namespace ErronkaOndo.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IkomentarioService _komentarioService;
+        private readonly IPartidaService _partidaService;
 
-        public HomeController(ILogger<HomeController> logger,IkomentarioService komentarioService)
+        public HomeController(ILogger<HomeController> logger,IkomentarioService komentarioService,IPartidaService partidaService)
         {
             _logger = logger;
             _komentarioService = komentarioService;
+            _partidaService = partidaService;
+
         }
 
         public IActionResult Index()
@@ -47,6 +50,16 @@ namespace ErronkaOndo.Controllers
         public IActionResult Foroa()
         {
             return View();
+        }
+
+        public async Task<IActionResult> PartidakEmployee(int id)
+        {
+            IEnumerable<Partida> list = await _partidaService.GetPartidaPertsona(id+"");
+
+            ViewData["cuantos"] = list.Count();
+            ViewData["empid"] = id;
+
+            return View(list);
         }
 
         [HttpPost]
