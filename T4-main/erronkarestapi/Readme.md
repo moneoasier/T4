@@ -16,7 +16,7 @@ Swagger eginda dago eta funtzionatzen du.
 1. PartidaDAO.java --> Konexioa egiten du Mongoko datubasearekin eta kolekzioarekin.
 
 *eus.uni.dam.model*
-1.Partida.java --> Zer datu hartu behar dituen klasea da.
+1. Partida.java --> Zer datu hartu behar dituen klasea da.
 
 # Abiaraztea
 Behin abiarazten da eta datu berriak sartzerakoan bakarrik eguneratzen dira.
