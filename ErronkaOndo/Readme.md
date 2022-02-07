@@ -6,7 +6,6 @@
  2. Rest api
  3. SQL server
 
-# Reports
 
 <h1>Hall of fame</h1>
 ![HallofFame](https://user-images.githubusercontent.com/75113996/152791802-a7b2fcc9-2cfe-4f5e-9fbb-cd9b1bdf59e4.PNG)
