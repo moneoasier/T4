@@ -28,3 +28,4 @@ Behin abiarazten da eta datu berriak sartzerakoan bakarrik eguneratzen dira.
 # Iturriak
 Aurreko ariketak <br/>
 https://docs.mongodb.com/manual/reference/operator/query/
+https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
