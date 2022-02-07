@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"eus.uni.dam","l":"App"},{"p":"eus.uni.dam.controller","l":"EskatzaileaController"},{"p":"eus.uni.dam.model","l":"Partida"},{"p":"eus.uni.dam.dao","l":"PartidaDAO"},{"p":"eus.uni.dam","l":"SpringConfiguration"},{"p":"eus.uni.dam","l":"SpringFoxConfig"}];updateSearchResults();
