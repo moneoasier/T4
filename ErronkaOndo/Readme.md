@@ -15,8 +15,8 @@
 ![HallofShame](https://user-images.githubusercontent.com/75113996/152791836-a0fc5b62-d278-4182-963b-64d80b18b56f.PNG)
 
 <h1>Partidak</h1>
+<p>Langile id-aren arabera agertzen dira partidak </p>
 ![Partidak](https://user-images.githubusercontent.com/75113996/152791990-c52f15f2-79d3-45bc-97f1-a3e6f5bf2112.PNG)
-
 
 <h1>Inkesta</h1>
 ![inkesta](https://user-images.githubusercontent.com/75113996/152791903-2ecf1f52-5218-4c01-9b04-2f8dc28ebbec.PNG)
