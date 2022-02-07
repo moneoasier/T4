@@ -33,7 +33,7 @@ import javax.print.attribute.standard.DateTimeAtCompleted;
  * @author hayar.abderrafia
  *
  */
-public class EskatzaileaController {
+public class PartidaController {
 		List<Partida> partidaOrdenatuak;
 		List<Partida> partidaDatak;
 		@Autowired
