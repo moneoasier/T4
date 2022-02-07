@@ -2,167 +2,172 @@
 
 
 body {
-    background-color: #EBED94;
+     background-color: #EBED94;
 }
 
 
 /*nire klaseak*/
 
 .img-fluid {
-    width: 100px;
-    height: 100px;
+     width: 100px;
+     height: 100px;
 }
 
 .imgpdf {
-
-float:left;
+     float: left;
 }
 
 .navbar {
-    background-color: #4E3B31;
+     background-color: #4E3B31;
 }
 
 
 .testua {
-    background-color: #9CC667;
-    margin-top: 5%;
-    border-radius: 10px;
-    color: black;
-    text-align: center;
+     background-color: #9CC667;
+     margin-top: 5%;
+     border-radius: 10px;
+     color: black;
+     text-align: center;
 }
 
 
 
 .izenburua {
-    background-color: #9CC667;
-    color: black;
-    margin-top: 15%;
-    text-align: center;
-    border-radius: 10px;
-    width: 20%;
-    height: 50px;
+     background-color: #9CC667;
+     color: black;
+     margin-top: 15%;
+     text-align: center;
+     border-radius: 10px;
+     width: 20%;
+     height: 50px;
+}
+
+.izenburuashame {
+     width: 25%;
+     height: 50px;
+     background-color: #9CC667;
+     color: black;
+     margin-top: 15%;
+     text-align: center;
+     border-radius: 10px;
 }
 
 .izenburua:after {
-        content: '';
-        display: block;
-        padding-bottom: 100%;
-    }
+     content: '';
+     display: block;
+     padding-bottom: 100%;
+}
 
 
 footer {
-    background-color: #4E3B31;
-    
+     background-color: #4E3B31;
 }
 
 .irudiforo {
-    padding:5px;
-    float:left;
+     padding: 5px;
+     float: left;
 }
 
 .testuaforo {
-text-align:left;
-
+     text-align: left;
 }
 
 
 
 .zentratu {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 30%;
-    margin: auto;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 50%;
+     height: 30%;
+     margin: auto;
 }
+
 textarea {
-    resize: none;
+     resize: none;
 }
 
 .bar {
-    
-    height: 400px;
-    overflow-y: scroll;
+      height: 400px;
+      overflow-y: scroll;
 }
 
 .bar::-webkit-scrollbar {
-    
-    display:none;
-    
- }
-
-.box {
-    width: 300px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #191919;
-    text-align: center;
-    border-radius:10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      display: none;
 }
 
-    .box h4 {
-        color: white;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
+.box {
+      width: 300px;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #191919;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
 
-    .box input[type = "text"], .box input[type = "password"] {
-        border: 0;
-        background: none;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        border: 2px solid white;
-        padding: 14px 10px;
-        width: 200px;
-        outline: none;
-        color: white;
-        border-radius: 24px;
-        transition: 0.45s;
-    }
+.box h4 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+ }
 
-        .box input[type = "text"]:focus, .box input[type = "password"]:focus {
-            width: 240px;
-            border-color: white;
-        }
+.box input[type = "text"], .box input[type = "password"] {
+     border: 0;
+     background: none;
+     display: block;
+     margin: 20px auto;
+     text-align: center;
+     border: 2px solid white;
+     padding: 14px 10px;
+     width: 200px;
+     outline: none;
+     color: white;
+     border-radius: 24px;
+     transition: 0.45s;
+ }
 
-    .box input[type = "submit"] {
-        border: 0;
-        background: none;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        border: 2px solid white;
-        padding: 14px 40px;
-        outline: none;
-        color: black;
-        border-radius: 24px;
-        transition: 0.25s;
-        cursor: pointer;
-    }
+.box input[type = "text"]:focus, .box input[type = "password"]:focus {
+     width: 240px;
+     border-color: white;
+ }
 
-        .box input[type = "submit"]:hover {
-            background: white;
-            color: black;
-        }
+.box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
 
-    .box a:link {
-        color: #5fb962;
-    }
+.box input[type = "submit"]:hover {
+    background: white;
+    color: black;
+}
 
-    .box a:visited {
-        color: white;
-    }
+.box a:link {
+    color: #5fb962;
+}
 
-    .box a:hover {
-        color: #9BD770;
-    }
+.box a:visited {
+    color: white;
+}
+
+.box a:hover {
+    color: #9BD770;
+}
 
 
 .kbox input[type = "text"] {
@@ -174,16 +179,15 @@ textarea {
     border: 2px solid white;
     padding: 14px 10px;
     width: 200px;
-   
     color: black;
     border-radius: 24px;
     transition: 0.45s;
 }
 
 .kbox input[type = "text"]:focus {
-        width: 230px;
-        outline: none;
-        border: 2px solid black;
+    width: 230px;
+    outline: none;
+    border: 2px solid black;
  }
 
 
@@ -204,7 +208,7 @@ textarea {
 
 .kbox input[type = "submit"]:hover {
     border-color: black;
-}
+ }
 
 
 .zuriune {
@@ -212,35 +216,29 @@ textarea {
 }
 
 .zentratuizenburu {
-
-
-padding-top:5%;
+    padding-top: 5%;
 }
 
 .navbar {
-
-margin-bottom:20%;
+    margin-bottom: 20%;
 }
 
 .forozentratu {
-
-
-margin-top:10%;
-
+    margin-top: 10%;
 }
 
 .imgforo {
     margin-top: 15%;
 }
 
-.h5{
-   text-align:left;
+.h5 {
+    text-align: left;
 }
 
-.imgDirect{
-    height:200%;
-    width:200%;
-    align-content:center;
+.imgDirect {
+    height: 200%;
+    width: 200%;
+    align-content: center;
 }
 
 body {
@@ -250,69 +248,38 @@ body {
 .containerer {
     display: flex;
     align-items: flex-end;
-    align-content:center;
-}
-
-.podium__item {
-    width: 200px;
-}
-
-.podium__rank {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    color: #fff;
-}
-
-.podium__city {
-    text-align: center;
-    padding: 0 .5rem;
-}
-
-.podium__number {
-    width: 27px;
-    height: 75px;
-}
-
-.podium .first {
-    min-height: 300px;
-    background: rgb(255,172,37);
-    background: linear-gradient(333deg, rgba(255,172,37,1) 0%, rgba(254,207,51,1) 13%, rgba(254,224,51,1) 53%, rgba(255,172,37,1) 100%);
-}
-
-.podium .second {
-    min-height: 200px;
-    background: blue;
-}
-
-.podium .third {
-    min-height: 100px;
-    background: green;
+    align-content: center;
 }
 
 .inkestaform {
-
-padding-top:5px;
-padding-bottom:2px;
-
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
 
 .beltza {
-color:black !important;
-
+    color: black !important;
 }
+
 .goikospace {
     padding-top: 2%;
-
 }
+
 .homeimg {
     height: 550px;
 }
 
 .hometext {
+    text-align: justify;
+}
 
-text-align:justify;
+.irudipodium {
+    width: 250px;
+}
 
+.apaindu {
+    padding: 10px;
+}
 
+.apps {
+    width: 250px;
 }
