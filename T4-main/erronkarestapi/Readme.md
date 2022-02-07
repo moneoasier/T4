@@ -15,7 +15,7 @@ Swagger eginda dago eta funtzionatzen du.
 *eus.uni.dam.dao paketea*
 1. PartidaDAO.java --> Konexioa egiten du Mongoko datubasearekin eta kolekzioarekin.
 
-*eus.uni.dam.model*
+*eus.uni.dam.model paketea*
 1. Partida.java --> Zer datu hartu behar dituen klasea da.
 
 # Abiaraztea
