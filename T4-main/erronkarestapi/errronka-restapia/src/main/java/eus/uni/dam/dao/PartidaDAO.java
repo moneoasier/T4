@@ -51,6 +51,7 @@ public class PartidaDAO {
     	
     	return collection.find(filter).into(new ArrayList<>());
     }
+    
     public int findPartidaKop(){
 
   	collection.countDocuments();

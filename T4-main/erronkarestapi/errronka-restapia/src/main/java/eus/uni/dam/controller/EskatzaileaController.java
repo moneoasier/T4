@@ -36,10 +36,7 @@ import javax.print.attribute.standard.DateTimeAtCompleted;
 public class EskatzaileaController {
 		List<Partida> partidaOrdenatuak;
 		List<Partida> partidaDatak;
-		List<Partida> top3= new ArrayList<Partida>();
-		
-		
-	   @Autowired
+		@Autowired
 	   private PartidaDAO partidaDao;
 
 	   /**
@@ -77,26 +74,7 @@ public class EskatzaileaController {
 		 }
 	        return partidakFame;
 	    }
-	   
-	   /**
-	    * partidakTop3 Mapping-aren bidez 3 partida onenak kontsultatzen ditu
-	    * @return
-	    */
-	   @GetMapping("partidakTop3")
-	   public List<Partida> getTop3(){
-		   
-		   if(getPartidakFame().size()>3) {
-			   for(int i=0;i<3;i++) {
-				   top3.add(getPartidakFame().get(i));
-			   }
-		   }else {
-			   return getPartidakFame();
-		   }
-		return top3;
-		   
-		   
-	   }
-	   
+
 	   /**
 	    * partidak Mapping-aren bidez jokatu diren partida guztiak kontsultatzen ditu
 	    * @return
@@ -121,7 +99,7 @@ public class EskatzaileaController {
 		}
 	
 	   /**
-	    * partidaFame Mapping-aren bidez bezero bakoitzaren puntuazio txarrena erakusten du eta ordenatzen du
+	    * partidaSame Mapping-aren bidez bezero bakoitzaren puntuazio txarrenak ordenatu eta kontsultatzen du
 	    * @return
 	    */
 	   @GetMapping("partidakShame")
@@ -154,13 +132,16 @@ public class EskatzaileaController {
 		   
 	        return partidakShame;
 	    }
-	   
-	   @GetMapping("partidaKopurua")
-	    public String getPartidaKopurua() {
+	  /**
+	   * partidaKopurua Mapping-aren bidez jolastu diren partida kopurua kontsultatzen du
+	   * @return
+	   */
+	   @GetMapping("partidakKopurua")
+	    public int getPartidaKopurua() {
 		
 		   
 		   
-	        return "Jolastu diren partida kopurua: "+partidaDao.findPartidaKop();
+	        return partidaDao.findPartidaKop();
 	        
 	   }
 
