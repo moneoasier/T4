@@ -6,7 +6,7 @@
  2. Rest api
  3. SQL server
 
-
+# Web orriak
 <h1>Hall of fame</h1>
 ![HallofFame](https://user-images.githubusercontent.com/75113996/152791802-a7b2fcc9-2cfe-4f5e-9fbb-cd9b1bdf59e4.PNG)
 
@@ -20,6 +20,7 @@
 <h1>Inkesta</h1>
 ![inkesta](https://user-images.githubusercontent.com/75113996/152791903-2ecf1f52-5218-4c01-9b04-2f8dc28ebbec.PNG)
 
+# Reports
 <h1>Report Hall of fame</h1>
 ![ReportHallofFame](https://user-images.githubusercontent.com/75113996/152792141-82c2fb84-c4ed-4b79-8fd0-577d723dfa99.PNG)
 
