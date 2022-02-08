@@ -311,7 +311,6 @@ C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Home\HallOfShame.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Komentario\Create.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Komentario\Index.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Shared\Components\PartidaShame\Default.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Shared\Components\Partida\Default.cshtml.g.cs
@@ -330,7 +329,6 @@ C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\ErronkaOndo.pdb
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\ErronkaOndo.genruntimeconfig.cache
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Shared\Components\Foroa\Default.cshtml.g.cs
-C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Inkesta\Create.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Inkesta\Index.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\docfx.json
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\_site\manifest.json
@@ -359,3 +357,5 @@ C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\RdlCompile.compiled
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\obj\Debug\net5.0\Razor\Views\Home\PartidakEmployee.cshtml.g.cs
 C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\wwwroot\Reports\Report2.rdlc
+C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\docfx\manifest.json
+C:\Users\moneo.asier\Documents\GitHub\T4\ErronkaOndo\ErronkaOndo\bin\Debug\net5.0\docfx\search-stopwords.json

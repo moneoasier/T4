@@ -13,7 +13,7 @@ namespace ErronkaOndo.Controllers
     /// <summary>
     /// KomentarioController kontroladorea
     /// </summary>
-  //[Authorize]
+  [Authorize]
     public class KomentarioController : Controller
     {
         private readonly IkomentarioService _komentarioService;
