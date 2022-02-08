@@ -23,7 +23,7 @@ Behin abiarazten da eta datu berriak sartzerakoan bakarrik eguneratzen dira.
 
 
 # Klase diagrama
-
+![T4](https://user-images.githubusercontent.com/75114146/152936488-85e0c9f9-b1f8-4fb3-95c2-1877eed8b48a.svg)
 
 # Iturriak
 Aurreko ariketak <br/>
