@@ -6,6 +6,9 @@
  2. Rest api
  3. SQL server
 
+# docfx dokumentuak
+ErronkaOndo --> docfx --> api 
+
 # Web orriak
 <h1>Hall of fame</h1>
 
