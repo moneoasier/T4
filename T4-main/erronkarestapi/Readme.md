@@ -27,5 +27,6 @@ Behin abiarazten da eta datu berriak sartzerakoan bakarrik eguneratzen dira.
 
 # Iturriak
 Aurreko ariketak <br/>
+https://github.com/imadariaga <br/>
 https://docs.mongodb.com/manual/reference/operator/query/ <br/>
 https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
