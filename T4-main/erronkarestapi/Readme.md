@@ -10,7 +10,7 @@ Swagger eginda dago eta funtzionatzen du.
 3. SpringFoxConfig.java --> Swagger egiteko klasea da.
 
 *eus.uni.dam.controller paketea*
-1. EskatzaileaControler.java --> Hainbat metodo daude kontsulta ezberdinak egiteko.
+1. PartidaController.java --> Hainbat metodo daude kontsulta ezberdinak egiteko.
 
 *eus.uni.dam.dao paketea*
 1. PartidaDAO.java --> Konexioa egiten du Mongoko datubasearekin eta kolekzioarekin.
