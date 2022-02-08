@@ -1,0 +1,582 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/moneo.asier/Documents/GitHub/T4/ErronkaOndo/ErronkaOndo",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.IdentityHostingStartup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.IdentityHostingStartup.html",
+          "hash": "OL9764dqwdXuzLpKR9e/a4Su1JOZxk0tDF1oUXP/2bo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.LoginModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.LoginModel.InputModel.html",
+          "hash": "juIlZj1N4MUqdGKxhTgwk2ogoStCjqHJjg2mQhWtS/U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.LoginModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.LoginModel.html",
+          "hash": "enS1H75Gbztm/Uo72gh/gG8BoBUt7cuOwpygzHVP+/M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.RegisterConfirmationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.RegisterConfirmationModel.html",
+          "hash": "/JfMfMrWrW+mu9/E9dtgyA/R6LRZaAGSgsbTDWLq/BI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.RegisterModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.RegisterModel.InputModel.html",
+          "hash": "no/5+cG22nCEOUlolcOdxPaXFmmMEO33nATFmeqP4s0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.RegisterModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.RegisterModel.html",
+          "hash": "rdgnyv32P5kHRqeL1HZtGWOsh7vPuTJVT41d86TZtoI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.Pages.Account.html",
+          "hash": "zb0UEQlEb7WvXosItadWqtxpgD8qgCuTSlzyVQjiV5Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Areas.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Areas.Identity.html",
+          "hash": "7cLE0fgDXGXwMCnG7hYwoiYL170Fdr5PkMITwcmpxYQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Controllers.HomeController.html",
+          "hash": "vX5cAYRHnGo4T48tYLdwFRXbmFoH8Yy0ssx4+2girLI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Controllers.InkestaController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Controllers.InkestaController.html",
+          "hash": "nd0oQ8UG5zaRU5EtUfX9jZYHyT7WXORplEIpvocOXjs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Controllers.KomentarioController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Controllers.KomentarioController.html",
+          "hash": "52cGGRI+VQKt6NrmUo1f2JJ8rm3g5hm1/ctk+qPrN0Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Controllers.ReportController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Controllers.ReportController.html",
+          "hash": "xWIKPTeFSHE5pjjf2wMdGEup7Czvf+W4thYT80oymPE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Controllers.html",
+          "hash": "AIp/zlcqH8i4lbIjP6U0QBu0eTk12xUVHen1OpBFatQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Data.ApplicationDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Data.ApplicationDbContext.html",
+          "hash": "kr0eyCHvo79nTbu5VDiuB+stwcDvozu64+aSS2LX85c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Data.ErronkaOndoDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Data.ErronkaOndoDbContext.html",
+          "hash": "MJYvot/MWLuDPWKKGRN+olSKBV4DeHVqfwE3FJnQMJ4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Data.Migrations.CreateIdentitySchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Data.Migrations.CreateIdentitySchema.html",
+          "hash": "6ClDS0kbNh4TrVJky/9fzLJ7h0WQvAY9uhWs4x3AqvM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Data.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Data.Migrations.html",
+          "hash": "LK5SoYZQR7ShfrV/PH6Ttb/KhMTfBpU0DpxXT0WQsgA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Data.html",
+          "hash": "nFt7J2Na1aFRNJxC8A7/GGjAdefV2AK1mvX0GeYlODc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Models.ErrorViewModel.html",
+          "hash": "LT6UhP16n0RaY9ldR3iib9HwDJbf3QeJvRFP73H4ank="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Models.Inkesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Models.Inkesta.html",
+          "hash": "IdQU1PzUoy42AVpQZZlssEZ4V4vAT7NGGo5k+qKIztE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Models.Komentario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Models.Komentario.html",
+          "hash": "zKlYxj+rugVkvDuy0a5bqqAqIaAMiDezMVTNmkEh66U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Models.Partida.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Models.Partida.html",
+          "hash": "00roR84YwMubs7HvhoRGPAYu0asxHBKZa+eX4GC/buU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Models.html",
+          "hash": "FEGvzOHbaj9lhLfzKQVw5xHheLH/AYX+wU/50AAABCY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Program.html",
+          "hash": "JgBLrtuin/gCfFvRKazN+iEsYtIR+nDVKKJgn4QufQs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.IPartidaService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.IPartidaService.html",
+          "hash": "yATcs473iMx6OU4KJvoCjR2Zpb9mkBRjPBwKm6XKrcc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.IinkestaService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.IinkestaService.html",
+          "hash": "/JDvYGPp/4CNmfQgN/f6NGAax0jiLW/q2ovCMu4tl7g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.IkomentarioService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.IkomentarioService.html",
+          "hash": "jGm4eAlmJ6PDrtstMFADmm7DbAbp7IqMY9XoJYJjrdA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.InkestaService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.InkestaService.html",
+          "hash": "AXrrYytlg5yoy4v7HGfMIcCv/NX0VsMjcdW2CPd+1M4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.KomentarioService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.KomentarioService.html",
+          "hash": "QYJl4nPICnEMa2uRiNbVbwEIgEHiltCYVI8Y5HCZ1Qc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.PartidaService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.PartidaService.html",
+          "hash": "CWlec2NZ4BJz7/qAVGLMI9smHeIUuPx75o2djo0ac6Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Services.html",
+          "hash": "QA0LKYKFsKMCtEiHmSyyHptYHAA1am+44iBDcgdFxc8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.Startup.html",
+          "hash": "Exlmw8d9QHJRqnCyfCCi74uaTxkC+y/RXxftTeu+/ys="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.ViewComponents.ForoaViewComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.ViewComponents.ForoaViewComponent.html",
+          "hash": "QCigzRuGd5QI7vEMM9tLhfU6alM+lSibA0myCquiWmM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.ViewComponents.PartidaShameViewComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.ViewComponents.PartidaShameViewComponent.html",
+          "hash": "xJajDVD/6fH9CwzuyK9qHY0IlKj5RKE5QsKogy4XVck="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.ViewComponents.PartidaViewComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.ViewComponents.PartidaViewComponent.html",
+          "hash": "n3rptP/gITPfrOz5sSLl3MiDLF9lL1V86RXMIMv9Rg0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.ViewComponents.PartidakViewComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.ViewComponents.PartidakViewComponent.html",
+          "hash": "BClg3bvrW2PovlhspDdySktFuCqm8zEv3IR8WimsVOc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.ViewComponents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.ViewComponents.html",
+          "hash": "cy+1WtUoOaX/egh3tI7lWI6kVb402tIyBvxjiZbxv54="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ErronkaOndo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ErronkaOndo.html",
+          "hash": "N86z7JCoJL4jG9bAy+AY2HHcwSnOdvI4CoaUvpewE8o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Dxd6pplxP/qdqmKwUWWflbk3L9+7EYd9TZE4nzkQ06k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "7v97V8ocPUt/AZwtPVqWKhg2Pr6qJeTw1Q06sGo6ygE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "ta5h5UDF2bhfkHMe5fKZPCC3wRGgtazGNgA+csM4x9A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "lpSIoTrmYDrlWMfF6vrSLVLSBuAKMKQMiiPObU0rzOo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 38,
+          "skipped_file_count": 38
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
